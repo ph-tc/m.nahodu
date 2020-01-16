@@ -3,7 +3,7 @@
 <head>
 
   <title th:text="${isWebRequest} == false ? 'Подтверждение оплаты с баланса телефона' : 'Подтверждение оплаты с баланса телефона шаг 2 из 2'">Подтверждение оплаты с баланса телефона</title>
-  <meta th:if="${isWebRequest} == false" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+  <meta th:if="${isWebRequest} == false" name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,shrink-to-fit=no" />
   <meta th:if="${isWebRequest} == false" name="MobileOptimized" content="width" />
   <meta th:if="${isWebRequest} == false" name="HandheldFriendly" content="true" />
 
@@ -210,7 +210,6 @@
       background-image: -o-linear-gradient(top, rgba(0, 50, 142, 0.5) 0%, rgba(0, 50, 142, 0) 60%);
       background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 50, 142, 0.5)), color-stop(60%, rgba(0, 50, 142, 0)));
       background-image: linear-gradient(to bottom, rgba(0, 50, 142, 0.5) 0%, rgba(0, 50, 142, 0) 60%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8000328e', endColorstr='#0000328e', GradientType=0);
     }
 
     .creative-title {
